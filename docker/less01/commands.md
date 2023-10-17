@@ -23,3 +23,12 @@ docker build -t $tag .
 ```
 docker exec -it $container_name /bin/bash
 ```
+#### Остановить контейнер
+```
+docker stop $container_name
+```
+#### Запустить контейнер
+```
+docker start $container_name
+```
+!!! Принципиальная разница с run - start запустит только контейнер в остановленном состоянии, но не поднимет его с нуля
